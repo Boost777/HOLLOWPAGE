@@ -24,10 +24,10 @@ export function About() {
   }, []);
 
   const stats = [
-    { icon: Code2, label: 'Proyectos', value: '15+' },
-    { icon: GraduationCap, label: 'Semestre', value: '6°' },
-    { icon: Terminal, label: 'Lenguajes', value: '8+' },
-    { icon: Lightbulb, label: 'Tecnologías', value: '20+' },
+    { icon: Code2, label: 'Proyectos', value: '2' },
+    { icon: GraduationCap, label: 'Semestre', value: '4°' },
+    { icon: Terminal, label: 'Lenguajes', value: '4' },
+    { icon: Lightbulb, label: 'Tecnologías', value: '10' },
   ];
 
   return (
@@ -113,21 +113,21 @@ export function About() {
                   <div className="space-y-3">
                     <div className="flex justify-between text-sm">
                       <span className="text-hollow-blue-accent/60">Progreso de Carrera</span>
-                      <span className="text-hollow-gold">60%</span>
+                      <span className="text-hollow-gold">40%</span>
                     </div>
                     <div className="h-2 bg-hollow-dark rounded-full overflow-hidden">
-                      <div className="h-full w-[60%] bg-gradient-to-r from-hollow-gold to-hollow-gold-light rounded-full" />
+                      <div className="h-full w-[40%] bg-gradient-to-r from-hollow-gold to-hollow-gold-light rounded-full" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
                     <div className="p-4 rounded-lg bg-hollow-dark/50 border border-hollow-blue-light/20">
                       <div className="text-hollow-gold text-sm mb-1">Especialidad</div>
-                      <div className="text-hollow-white font-cinzel">Full Stack</div>
+                      <div className="text-hollow-white font-cinzel">Abstracción</div>
                     </div>
                     <div className="p-4 rounded-lg bg-hollow-dark/50 border border-hollow-blue-light/20">
                       <div className="text-hollow-gold text-sm mb-1">Enfoque</div>
-                      <div className="text-hollow-white font-cinzel">Web/Mobile</div>
+                      <div className="text-hollow-white font-cinzel">Web</div>
                     </div>
                   </div>
 

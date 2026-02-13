@@ -22,31 +22,31 @@ interface Skill {
 
 const skills: Skill[] = [
   // Frontend
-  { name: 'React', level: 90, icon: Code2, category: 'Frontend' },
-  { name: 'TypeScript', level: 85, icon: Code2, category: 'Frontend' },
-  { name: 'JavaScript', level: 95, icon: Code2, category: 'Frontend' },
-  { name: 'Tailwind CSS', level: 90, icon: Layout, category: 'Frontend' },
-  { name: 'HTML/CSS', level: 95, icon: Layout, category: 'Frontend' },
+  { name: 'React', level: 15, icon: Code2, category: 'Frontend' },
+  { name: 'TypeScript', level: 20, icon: Code2, category: 'Frontend' },
+  { name: 'JavaScript', level: 20, icon: Code2, category: 'Frontend' },
+  { name: 'Tailwind CSS', level: 5, icon: Layout, category: 'Frontend' },
+  { name: 'HTML/CSS', level: 10, icon: Layout, category: 'Frontend' },
   
   // Backend
-  { name: 'Node.js', level: 85, icon: Server, category: 'Backend' },
-  { name: 'Python', level: 80, icon: Terminal, category: 'Backend' },
-  { name: 'Java', level: 75, icon: Cpu, category: 'Backend' },
-  { name: 'C#', level: 70, icon: Cpu, category: 'Backend' },
-  { name: 'Express', level: 85, icon: Server, category: 'Backend' },
+  { name: 'Node.js', level: 1, icon: Server, category: 'Backend' },
+  { name: 'Python', level: 10, icon: Terminal, category: 'Backend' },
+  { name: 'Java', level: 20, icon: Cpu, category: 'Backend' },
+  { name: 'C#', level: 50, icon: Cpu, category: 'Backend' },
+  { name: 'Express', level: 1, icon: Server, category: 'Backend' },
   
   // Database
-  { name: 'PostgreSQL', level: 80, icon: Database, category: 'Database' },
-  { name: 'MongoDB', level: 75, icon: Database, category: 'Database' },
-  { name: 'MySQL', level: 80, icon: Database, category: 'Database' },
-  { name: 'Redis', level: 65, icon: Database, category: 'Database' },
+  { name: 'PostgreSQL', level: 1, icon: Database, category: 'Database' },
+  { name: 'MongoDB', level: 1, icon: Database, category: 'Database' },
+  { name: 'MySQL', level: 1, icon: Database, category: 'Database' },
+  { name: 'Redis', level: 1, icon: Database, category: 'Database' },
   
   // Mobile & Tools
-  { name: 'React Native', level: 70, icon: Smartphone, category: 'Mobile' },
-  { name: 'Git', level: 90, icon: GitBranch, category: 'Tools' },
-  { name: 'Docker', level: 70, icon: Box, category: 'Tools' },
-  { name: 'AWS', level: 65, icon: Cloud, category: 'Tools' },
-  { name: 'Jest', level: 75, icon: TestTube, category: 'Tools' },
+  { name: 'React Native', level: 1, icon: Smartphone, category: 'Mobile' },
+  { name: 'Git', level: 50, icon: GitBranch, category: 'Tools' },
+  { name: 'Docker', level: 1, icon: Box, category: 'Tools' },
+  { name: 'AWS', level: 1, icon: Cloud, category: 'Tools' },
+  { name: 'Jest', level: 1, icon: TestTube, category: 'Tools' },
 ];
 
 const categories = ['Todos', 'Frontend', 'Backend', 'Database', 'Mobile', 'Tools'];
