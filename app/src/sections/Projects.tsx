@@ -55,7 +55,7 @@ const projects: Project[] = [
     fullDescription: 'TE LO ADVIERTO',
     technologies: ['DESCONOCIDA'],
     category: 'ÚLTIMA ADVERTENCIA',
-    icon: window,
+    icon: Database,
     githubUrl: 'endless.horse',
     color: 'from-red-500 to-yellow-500'
   }
