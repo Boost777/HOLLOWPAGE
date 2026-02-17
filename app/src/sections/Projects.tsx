@@ -34,7 +34,7 @@ const projects: Project[] = [
     category: 'Académico',
     icon: Layers,
     githubUrl: 'https://github.com/Boost777/Proyectos-AOPSW.git',
-    demoUrl: 'https://demo.com',
+    demoUrl: 'endless.horse',
     color: 'from-blue-500 to-cyan-500'
   },
   {
@@ -48,6 +48,17 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/Boost777/Proyectos-RESFW.git',
     color: 'from-green-500 to-emerald-500'
   },
+  {
+    id: 3,
+    title: 'CURIOSIDAD?',
+    description: 'NO ENTRES AQUÍ',
+    fullDescription: 'TE LO ADVIERTO',
+    technologies: ['DESCONOCIDA'],
+    category: 'ÚLTIMA ADVERTENCIA',
+    icon: window,
+    githubUrl: 'endless.horse',
+    color: 'from-red-500 to-yellow-500'
+  }
 ];
 
 export function Projects() {
