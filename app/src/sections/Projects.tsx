@@ -34,7 +34,7 @@ const projects: Project[] = [
     category: 'Académico',
     icon: Layers,
     githubUrl: 'https://github.com/Boost777/Proyectos-AOPSW.git',
-    demoUrl: 'endless.horse',
+    demoUrl: 'http://endless.horse',
     color: 'from-blue-500 to-cyan-500'
   },
   {
@@ -56,7 +56,7 @@ const projects: Project[] = [
     technologies: ['DESCONOCIDA'],
     category: 'ÚLTIMA ADVERTENCIA',
     icon: Database,
-    githubUrl: 'endless.horse',
+    githubUrl: 'http://endless.horse',
     color: 'from-red-500 to-yellow-500'
   }
 ];
