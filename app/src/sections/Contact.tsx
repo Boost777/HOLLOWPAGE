@@ -35,19 +35,42 @@ export function Contact() {
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast.success("Mensaje enviado", {
-      description: "Gracias por contactarme. Te responderé pronto.",
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const response = await fetch('https://formspree.io/f/xdaygpwj', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message
+      })
     });
-    
-    setFormData({ name: '', email: '', subject: '', message: '' });
+
+    if (response.ok) {
+      toast.success("Mensaje enviado", {
+        description: "Gracias por contactarme. Te responderé pronto.",
+      });
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } else {
+      toast.error("Error al enviar", {
+        description: "Algo salió mal. Intenta de nuevo.",
+      });
+    }
+  } catch {
+    toast.error("Error de conexión", {
+      description: "No se pudo conectar. Verifica tu internet.",
+    });
+  } finally {
     setIsSubmitting(false);
-  };
+  }
+};
 
   const contactInfo = [
     { icon: Mail, label: 'Email', value: 'leonwea@hotmail.com', href: 'mailto:leonwea@hotmail.com' },
@@ -57,7 +80,7 @@ export function Contact() {
 
   const socialLinks = [
     { icon: Github, label: 'GitHub', href: 'https://github.com/Boost777' },
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'www.linkedin.com/in/leon-gr-876a83350' },
     { icon: Twitter, label: 'Twitter', href: 'https://twitter.com' },
   ];
 
