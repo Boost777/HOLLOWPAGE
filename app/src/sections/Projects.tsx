@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ExternalLink, Github, ShoppingBag, Headphones, Skull } from 'lucide-react';
+import { ExternalLink, Github, ShoppingBag, Headphones, Skull, Terminal } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
@@ -55,20 +55,20 @@ const projects: Project[] = [
     fullDescription: 'El repositorio posee ejercicios de python nivel básico que puedes copiar y editar a tu gusto, ésto con el motivo de ayudar un poco al aprendizaje de dicho lenguaje.',
     technologies: ['DESCONOCIDA'],
     category: 'ÚLTIMA ADVERTENCIA',
-    icon: Skull,
+    icon: Terminal,
     githubUrl: 'https://github.com/Boost777/py',
     color: 'from-pink-500 to-red-500'
   },
   {
     id: 4,
-    title: 'CURIOSIDAD?',
+    title: '¿?',
     description: 'NO ENTRES AQUÍ',
-    fullDescription: 'TE LO ADVIERTO',
-    technologies: ['DESCONOCIDA'],
-    category: 'ÚLTIMA ADVERTENCIA',
+    fullDescription: '01101110 01101111 00100000 01100101 01101110 01110100 01110010 01100001 01110010',
+    technologies: ['¿?'],
+    category: '01010100 01110010 01101111 01101100 01101100 01100101 01101111',
     icon: Skull,
     githubUrl: 'http://endless.horse',
-    color: 'from-red-500 to-yellow-500'    
+    color: 'from-red-500 to-black'    
   }
 ];
 
