@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ExternalLink, Github, Layers, Database } from 'lucide-react';
+import { ExternalLink, Github, ShoppingBag, Headphones, Skull } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
@@ -27,37 +27,48 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Proyectos de AOPSW',
-    description: 'Trabajos para la materia de Administración de proyectos.',
-    fullDescription: 'Aquí se podrán visualizar mis trabajos y proyectos de Administración de Proyectos.',
-    technologies: ['Office'],
-    category: 'Académico',
-    icon: Layers,
-    githubUrl: 'https://github.com/Boost777/Proyectos-AOPSW.git',
-    demoUrl: 'http://endless.horse',
+    title: 'Street Dog',
+    description: 'Negocio de banderillas.',
+    fullDescription: 'Aquí se podrá visualizar una SPA de alto rendimiento, diseñada para digitalizar la toma de pedidos en negocios de comida rápida sin la fricción de una app pesada o e-commerce genérico.',
+    technologies: ['HTML/CSS', 'Javascript', 'Vercel'],
+    category: 'Negocios',
+    icon: ShoppingBag,
+    githubUrl: 'Por motivos de seguridad, el código no está abierto al público.',
+    demoUrl: 'https://streetdog-eight.vercel.app',
     color: 'from-blue-500 to-cyan-500'
   },
   {
     id: 2,
-    title: 'Proyectos de RESFW',
-    description: 'Trabajos para la materia de Requisitos y Especificaciones de Software.',
-    fullDescription: 'Aquí se podrán visualizar mis trabajos de Requisitos y Especificaciones de Software.',
-    technologies: ['Office'],
-    category: 'Académico',
-    icon: Database,
-    githubUrl: 'https://github.com/Boost777/Proyectos-RESFW.git',
+    title: 'Toy Player',
+    description: 'Reproductor mp3 para PC.',
+    fullDescription: 'Toy Player es un reproductor minimalista de mp3 para PC, con detalles estéticos sencillos pero agradables de ver, con barras en movimiento y la visualización de la portada de las canciones.',
+    technologies: ['Python'],
+    category: 'Música',
+    icon: Headphones,
+    githubUrl: 'https://github.com/Boost777/mp3',
     color: 'from-green-500 to-emerald-500'
   },
   {
     id: 3,
+    title: 'Aprendizaje python',
+    description: 'Ejercicios realizados de nivel básico',
+    fullDescription: 'El repositorio posee ejercicios de python nivel básico que puedes copiar y editar a tu gusto, ésto con el motivo de ayudar un poco al aprendizaje de dicho lenguaje.',
+    technologies: ['DESCONOCIDA'],
+    category: 'ÚLTIMA ADVERTENCIA',
+    icon: Skull,
+    githubUrl: 'https://github.com/Boost777/py',
+    color: 'from-pink-500 to-red-500'
+  }
+  {
+    id: 4,
     title: 'CURIOSIDAD?',
     description: 'NO ENTRES AQUÍ',
     fullDescription: 'TE LO ADVIERTO',
     technologies: ['DESCONOCIDA'],
     category: 'ÚLTIMA ADVERTENCIA',
-    icon: Database,
+    icon: Skull,
     githubUrl: 'http://endless.horse',
-    color: 'from-red-500 to-yellow-500'
+    color: 'from-red-500 to-yellow-500'    
   }
 ];
 
