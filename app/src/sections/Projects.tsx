@@ -53,7 +53,7 @@ const projects: Project[] = [
     title: 'Aprendizaje python',
     description: 'Ejercicios realizados de nivel básico',
     fullDescription: 'El repositorio posee ejercicios de python nivel básico que puedes copiar y editar a tu gusto, ésto con el motivo de ayudar un poco al aprendizaje de dicho lenguaje.',
-    technologies: ['DESCONOCIDA'],
+    technologies: ['Python'],
     category: 'Programación',
     icon: Terminal,
     githubUrl: 'https://github.com/Boost777/py',
