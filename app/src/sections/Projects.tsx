@@ -58,7 +58,7 @@ const projects: Project[] = [
     icon: Skull,
     githubUrl: 'https://github.com/Boost777/py',
     color: 'from-pink-500 to-red-500'
-  }
+  },
   {
     id: 4,
     title: 'CURIOSIDAD?',
